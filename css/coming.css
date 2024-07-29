@@ -1,0 +1,68 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+.coming-soon-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+.coming-soon-container:hover {
+    transform: scale(1.05); /* Slightly scales the container on hover */
+}
+
+
+
+.coming-soon-container h1 {
+    color: white !important;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: text-shadow 0.3s ease; /* Smooth transition for text shadow */
+}
+
+.coming-soon-container:hover h1 {
+    text-shadow: 4px 4px 8px rgba(233, 221, 221, 0.7); /* More pronounced shadow on hover */
+}
+
+
+
+
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer__title a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__social {
+    margin-top: 1rem;
+}
+
+.footer__icon {
+    margin: 0 0.5rem;
+    color: white;
+}
+
+.footer__copy {
+    margin-top: 1rem;
+}
