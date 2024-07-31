@@ -429,7 +429,7 @@ body {
 }
 
  /* Achievements Section */
-.achievements__container {
+/* .achievements__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -458,7 +458,55 @@ body {
   width: 40px;
   height: auto;
   margin-bottom: 1rem;
+} */
+
+
+
+
+.achievements__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  text-align: left;
 }
+
+.achievements__text {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a grey shadow */
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Adds a border with 30% grey opacity */
+  padding: 1rem; /* Adds padding for better appearance */
+  border-radius: 8px; /* Adds rounded corners */
+}
+
+.achievements__text ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  line-height: 2; /* Adjusted for better readability */
+}
+
+.achievements__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement-img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievements__container {
+    grid-template-columns: 1fr;
+    text-align: center; /* Center text on smaller screens for better alignment */
+  }
+}
+
 
 
 /*  CONTACT */
@@ -508,7 +556,7 @@ body {
   font-size: var(--smaller-font-size);
 }
 .footer:hover .footer__title {
-    color: #ddd3d0; /* Change to your desired hover color */
+    color: #ddd3d0; 
 }
 
 

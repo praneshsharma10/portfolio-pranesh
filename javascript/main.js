@@ -11,17 +11,17 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-/* remove menu media queries  */
+/*remove menu media queries*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/* SCROLL SECTIONS ACTIVE LINK */
+/* scroll section link */
 const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () =>{
@@ -42,7 +42,7 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/* SCROLL REVEAL ANIMATION */
+/* scroll animation */
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
