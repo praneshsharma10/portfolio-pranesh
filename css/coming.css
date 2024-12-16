@@ -15,10 +15,10 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease; /* Smooth scaling transition */
+    transition: transform 0.3s ease; 
 }
 .coming-soon-container:hover {
-    transform: scale(1.05); /* Slightly scales the container on hover */
+    transform: scale(1.05); 
 }
 
 
@@ -28,11 +28,11 @@ html, body {
     font-size: 4em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
-    transition: text-shadow 0.3s ease; /* Smooth transition for text shadow */
+    transition: text-shadow 0.3s ease; 
 }
 
 .coming-soon-container:hover h1 {
-    text-shadow: 4px 4px 8px rgba(233, 221, 221, 0.7); /* More pronounced shadow on hover */
+    text-shadow: 4px 4px 8px rgba(233, 221, 221, 0.7); 
 }
 
 
